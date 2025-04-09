@@ -16,6 +16,7 @@ p {
 PC用のスタイル 
 =================*/
 @media screen and (min-width: 768px) {
+
   /* 横幅設定 */
   body {
     max-width: 1080px;
@@ -31,6 +32,7 @@ PC用のスタイル
 
   /* ナビゲーションのレイアウト */
   #nav-pc {
+    display: block;
     text-align: right;
     font-size: 14px;
     padding-top: 15px;
@@ -58,8 +60,8 @@ PC用のスタイル
   #nav-pc>a:active {
     color: #0d0d0d;
   }
-  
-  #menu-sp {
+
+ #menu-sp {
     display: none;
   }
 
@@ -67,20 +69,18 @@ PC用のスタイル
     display: none;
   }
 
-
 }
 
 /*================
 スマートフォン用のスタイル 
 =================*/
-@media screen and (min-width: 375px) {
-  body {
-    margin: 0;
-  }
-
-  /* PCナビゲーション非表示に */
+@media screen and (max-width: 767px) {
+  /* PC用ナビゲーションを非表示 */
   #nav-pc {
     display: none;
+  }
+  body {
+    margin: 0;
   }
 
   /* ハンバーガーメニュー */
