@@ -85,7 +85,9 @@ PC用のスタイル
 
   /* ハンバーガーメニュー */
   #menu-sp {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     padding: 0;
   }
 
